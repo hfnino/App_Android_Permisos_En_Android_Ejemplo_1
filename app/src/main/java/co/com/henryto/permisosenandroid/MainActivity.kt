@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         // Esta funcion mostrara mensaje a usuario para que acepte o rechace el permiso para usar
         // la camara ...... Ojoo.... si el usuario rechaza el permiso, entonces no podemos mostrarle
         // el mensaje cada rato para que lo acepte, por lo que si el usuario luego necesita que si
-        // se acepte el permiso, deberá hacerlo manualmente llengo al administrador de aplicaciones
+        // se acepte el permiso, deberá hacerlo manualmente llendo al administrador de aplicaciones
         // en la configuración del telefono y activar el permiso correspondiente. Teniendo en cuenta
         // lo anterior, debemos comprobar si el usuario ya ha rechazado el permiso con anterioridad
         // o si por el contrario es la primera ves que se le muestra el mensaje para aceptarlo o
@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             // permiso que es el la camara, pero pueden ir todos los que se requieran, y por ultimo, le damos un numero cualquiera
             // que nosotros queramos y que representa un codigo, y ese codigo es el que asociamos a los
             // permisos que estamos solicitando, de tal manera que luego podemos usarlo para validaciones en caso de
-            //  ue tengamos otros permisos con otros codigos y queramos hacer logica distinta. Cada vez que pidamos
+            //  que tengamos otros permisos con otros codigos y queramos hacer logica distinta. Cada vez que pidamos
             // un permiso o varios, hay que ponerle un codigo diferente.
         }
     }
@@ -131,6 +131,9 @@ class MainActivity : AppCompatActivity() {
             // permisos que estamos solicitando, de tal manera que luego podemos usarlo para validaciones en caso de
             //  ue tengamos otros permisos con otros codigos y queramos hacer logica distinta. Cada vez que pidamos
             // un permiso o varios, hay que ponerle un codigo diferente.
+
+            // Si el usuario los acepta, el sitema llama automaticamente a la función onRequestPermissionsResult,
+            // que fue la que sobreescribimos
         }
     }
 
